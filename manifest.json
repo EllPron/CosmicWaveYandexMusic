@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "CosmicWaveYandexMusic",
+  "version": "5.0",
+  "description": "Видеофон и чистый интерфейс для Яндекс Музыки.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://music.yandex.ru/*", 
+        "*://music.yandex.by/*", 
+        "*://music.yandex.kz/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "background.mp4", 
+        "background.webm"
+      ],
+      "matches": [
+        "*://music.yandex.ru/*", 
+        "*://music.yandex.by/*", 
+        "*://music.yandex.kz/*"
+      ]
+    }
+  ]
+}
